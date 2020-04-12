@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'cards/index'
+  root to: 'cards#index'
   get 'cards/show'
   get 'cards/add'
   get 'cards/edit'

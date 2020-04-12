@@ -1,15 +1,21 @@
-<% @cards.each do |post| %>
+<div class="heading">
+  <div class="heading-table"></div>
+</div>
+
+<% @cards.each do |card| %>
   <div class="content">
     <div class="content__left">
-      <div class="content__left--image"></div>
+      <div class="content__left--id">
+        <%= card.id %>
+      </div>
     </div>
     <div class="content__right">
       <div class="content__right__top">
-        <%= post.title %>
+        <%= card.title %>
       </div>
       <div class="content__right__bottom">
-        <div class="content__right__bottom--date">
-          <%= post.created_at %>
+        <div class="content__right__bottom--author">
+          <%= card.author %>
         </div>
       </div>
     </div>
