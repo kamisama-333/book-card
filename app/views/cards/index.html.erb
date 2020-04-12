@@ -1,13 +1,23 @@
-<div class="contents row">
-  <div class="container">
-    <%= form_with(model: @tweet, local: true) do |form| %>
-      <h3>
-        投稿する
-      </h3>
-      <%= form.text_field :name, placeholder: "Nickname" %>
-      <%= form.text_field :image, placeholder: "Image Url" %>
-      <%= form.text_area :text, placeholder: "text" , rows: "10" %>
-      <%= form.submit "SEND" %>
-    <% end %>
-  </div>
+<div class="heading">
+  <div class="heading-table"></div>
 </div>
+
+<% @cards.each do |card| %>
+  <div class="content">
+    <div class="content__left">
+      <div class="content__left--id">
+        <%= card.id %>
+      </div>
+    </div>
+    <div class="content__right">
+      <div class="content__right__top">
+        <%= card.title %>
+      </div>
+      <div class="content__right__bottom">
+        <div class="content__right__bottom--author">
+          <%= card.author %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
