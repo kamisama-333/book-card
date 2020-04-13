@@ -6,7 +6,7 @@
 
 ## アプリ名
 
-BOOK-CARD
+book-card
 
 ## バージョン
 
