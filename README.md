@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## アプリを作った経緯
 
-Things you may want to cover:
+本をあまり読んでこなかったのでアプリを通じて本を読む週間をつけたいと思ったから。
 
-* Ruby version
+## アプリ名
 
-* System dependencies
+BOOK-CARD
 
-* Configuration
+## バージョン
 
-* Database creation
+ruby 2.5.1
 
-* Database initialization
+rails 5.2.3
 
-* How to run the test suite
+## 実装機能
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+一覧表示機能
+詳細表示機能
+削除機能
+編集機能
+ユーザー登録機能
+ログイン・アウト機能
