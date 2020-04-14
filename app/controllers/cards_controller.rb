@@ -3,6 +3,15 @@ class CardsController < ApplicationController
     @cards = Card.all
   end
 
+  def new
+    @card = Card.new
+  end
+
+  def create
+    Card.create(card_params)
+    redirect_to root_path
+  end
+
   def show
   end
 
@@ -10,5 +19,10 @@ class CardsController < ApplicationController
   end
 
   def edit
+  end
+
+  private
+  def card_params
+    params.require(:card).permit(:title)
   end
 end
