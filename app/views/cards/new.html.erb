@@ -1,0 +1,12 @@
+<div class="content__title">
+  新規作成
+</div>
+
+<%= form_with model: @card, class: :form, local: true do |f| %>
+  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= f.text_area :content, placeholder: :ブログ本文, class: :form__text %>
+  <%= f.submit '投稿する', class: :form__btn %>
+<% end %>
