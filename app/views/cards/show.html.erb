@@ -1,2 +1,47 @@
-<h1>Cards#show</h1>
-<p>Find me in app/views/cards/show.html.erb</p>
+<div class="New">
+  <div class="NewCardTitle">
+    『<%= @card.title %>』の詳細
+  </div>
+  <div class="NewCardBox">
+    <div class="NewCardAuthorName">
+      タイトル
+    </div>
+    <div class="NewCardAuthor">
+      <%= @card.title %>
+    </div>
+  </div>
+  <div class="NewCardBox">
+    <div class="NewCardAuthorName">
+      著者
+    </div>
+    <div class="NewCardAuthor">
+      <%= @card.author %>
+    </div>
+  </div>
+  <div class="NewCardBox">
+    <div class="NewCardAuthorName">
+      価格
+    </div>
+    <div class="NewCardAuthor">
+      <%= @card.price %>円
+    </div>
+  </div>
+  <div class="NewCardBox">
+    <div class="NewCardAuthorName">
+      出版社
+    </div>
+    <div class="NewCardAuthor">
+      <%= @card.publisher %>
+    </div>
+  </div>
+  <div class="NewCardBox">
+    <div class="NewCardAuthorName">
+      コメント
+    </div>
+    <div class="NewCardAuthor">
+      <%= @card.comment %>
+    </div>
+  </div>
+</div>
+
+

@@ -4,7 +4,7 @@
   </div>
   <div class="heading__text">
     <div class= "heading__text__titols">
-      題名
+      タイトル
     </div>
     <div class="heading__text__write">
       著者
@@ -22,7 +22,7 @@
     <div class="content__right">
       <div class= "content__right__box">
         <div class="content__right__box__top">
-          <%= card.title %>
+          <%= link_to card.title, card_path(card.id), id: "content__right__top__titles" %>
         </div>
         <div class="content__right__box__bottom">
           <div class="content__right__box__bottom--author">
@@ -32,10 +32,10 @@
       </div>
       <div class= "content__right__edit">
         <div class= "content__right__edit__new">
-          編集
+          <%= link_to "編集", edit_card_path(card.id), id: "edit-pass"%>
         </div>
         <div class= "content__right__edit__destroy">
-          削除
+          <%= link_to "削除", card_path(card.id), method: :delete, id: "destroy-pass" %>
         </div>
       </div>
     </div>
