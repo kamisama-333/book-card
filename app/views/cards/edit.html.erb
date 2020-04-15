@@ -1,2 +1,12 @@
-<h1>Cards#edit</h1>
-<p>Find me in app/views/cards/edit.html.erb</p>
+<div class="content__title">
+  『<%= @card.title %>』の内容を編集
+</div>
+
+<%= form_with model: @card, class: :form, local: true do |f| %>
+  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+  <%= f.text_field :author, placeholder: :著者, class: :form__title %>
+  <%= f.text_field :price, placeholder: :価格, class: :form__title %>
+  <%= f.text_field :publisher, placeholder: :出版社, class: :form__title %>
+  <%= f.text_area :comment, placeholder: :コメント, class: :form__text %>
+  <%= f.submit '更新する', class: :form__btn %>
+<% end %>
