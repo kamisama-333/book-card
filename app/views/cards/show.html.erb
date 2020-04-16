@@ -1,47 +1,50 @@
-<div class="New">
-  <div class="NewCardTitle">
-    『<%= @card.title %>』の詳細
-  </div>
-  <div class="NewCardBox">
-    <div class="NewCardAuthorName">
-      タイトル
+<div class="contents">
+  <div class="New">
+    <div class="NewCardTitle">
+      『<%= @card.title %>』の詳細
     </div>
-    <div class="NewCardAuthor">
-      <%= @card.title %>
+    <div class="NewCardBox">
+      <div class="NewCardAuthorName">
+        タイトル
+      </div>
+      <div class="NewCardAuthor">
+        <%= @card.title %>
+      </div>
     </div>
-  </div>
-  <div class="NewCardBox">
-    <div class="NewCardAuthorName">
-      著者
+    <div class="NewCardBox">
+      <div class="NewCardAuthorName">
+        著者
+      </div>
+      <div class="NewCardAuthor">
+        <%= @card.author %>
+      </div>
     </div>
-    <div class="NewCardAuthor">
-      <%= @card.author %>
+    <div class="NewCardBox">
+      <div class="NewCardAuthorName">
+        価格
+      </div>
+      <div class="NewCardAuthor">
+        <%= @card.price %>円
+      </div>
     </div>
-  </div>
-  <div class="NewCardBox">
-    <div class="NewCardAuthorName">
-      価格
+    <div class="NewCardBox">
+      <div class="NewCardAuthorName">
+        出版社
+      </div>
+      <div class="NewCardAuthor">
+        <%= @card.publisher %>
+      </div>
     </div>
-    <div class="NewCardAuthor">
-      <%= @card.price %>円
+    <div class="NewCardBox">
+      <div class="NewCardAuthorName">
+        コメント
+      </div>
+      <div class="NewCardAuthor">
+        <%= @card.comment %>
+      </div>
     </div>
-  </div>
-  <div class="NewCardBox">
-    <div class="NewCardAuthorName">
-      出版社
-    </div>
-    <div class="NewCardAuthor">
-      <%= @card.publisher %>
-    </div>
-  </div>
-  <div class="NewCardBox">
-    <div class="NewCardAuthorName">
-      コメント
-    </div>
-    <div class="NewCardAuthor">
-      <%= @card.comment %>
+    <div class="Btn">
+      <%= link_to "トップページに戻る", root_path, id: "Form__btn" %>
     </div>
   </div>
 </div>
-
-

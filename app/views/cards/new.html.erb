@@ -1,12 +1,14 @@
-<div class="content__title">
-  新規作成
-</div>
+<div class="contents">
+  <div class="content__title">
+    新規作成
+  </div>
 
-<%= form_with model: @card, class: :form, local: true do |f| %>
-  <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
-  <%= f.text_field :author, placeholder: :著者, class: :form__title %>
-  <%= f.text_field :price, placeholder: :価格, class: :form__title %>
-  <%= f.text_field :publisher, placeholder: :出版社, class: :form__title %>
-  <%= f.text_area :comment, placeholder: :コメント, class: :form__text %>
-  <%= f.submit '投稿する', class: :form__btn %>
-<% end %>
+  <%= form_with model: @card, class: :form, local: true do |f| %>
+    <%= f.text_field :title, placeholder: :タイトル, class: :form__title %>
+    <%= f.text_field :author, placeholder: :著者, class: :form__title %>
+    <%= f.text_field :price, placeholder: :価格, class: :form__title %>
+    <%= f.text_field :publisher, placeholder: :出版社, class: :form__title %>
+    <%= f.text_area :comment, placeholder: :コメント, class: :form__text %>
+    <%= f.submit '投稿する', class: :form__btn %>
+  <% end %>
+</div>

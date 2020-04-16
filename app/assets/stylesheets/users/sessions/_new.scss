@@ -1,0 +1,35 @@
+.Sess {
+  margin: auto;
+  background-color: gainsboro;
+  width: 700px;
+  text-align: center;
+
+  .SessBox {
+    &__Login {
+      padding: 20px;
+      font-size: 25px;
+      font-weight: bold;
+      border-bottom: 1px solid #f6f6f6;
+    }
+
+    .fields {
+      padding: 20px;
+
+      #FieldCon {
+        width: 300px;
+      }
+    }
+    .actions {
+      padding: 20px;
+
+      &__btn {
+        width: 300px;
+        margin: auto;
+
+        #FielName {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
