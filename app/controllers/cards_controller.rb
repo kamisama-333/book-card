@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.all
+    @cards = Card.includes(:user)
   end
 
   def new
@@ -37,6 +37,6 @@ class CardsController < ApplicationController
 
   private
   def card_params
-    params.require(:card).permit(:title, :author, :price, :publisher, :comment)
+    params.require(:card).permit(:title, :author, :price, :publisher, :comment).merge(user_id: current_user.id)
   end
 end

@@ -28,11 +28,20 @@
       padding: 0 40px 0 0;
     }
   }
-  
-  .postAuthor{
-    font-size: 15px;
-    color: #999;
-    text-align: center;
+  .Btn {
+    padding-left: 50px;
+
+    #Form__btn {
+      width: 200px;
+      display: block;
+      margin: 25px auto 0;
+      text-align: center;
+      text-decoration: none;
+      color: #67c5ff;
+      border: solid 2px #67c5ff;
+      border-radius: 3px;
+
+    }
   }
 }
 
