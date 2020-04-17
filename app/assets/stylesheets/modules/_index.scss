@@ -63,10 +63,10 @@ body{
       border-bottom: 1px solid #f6f6f6;
       display: flex;
       &__left{
-        padding-right: 40px;
+
         &--id{
-          position: relative;
-          top: 5px;
+          width: 55px;
+          font-size: 15px;
           
         }
       }

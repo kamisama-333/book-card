@@ -31,14 +31,6 @@
             </div>
           </div>
         </div>
-        <div class= "content__right__edit">
-          <div class= "content__right__edit__new">
-            <%= link_to "編集", edit_card_path(card.id), id: "edit-pass"%>
-          </div>
-          <div class= "content__right__edit__destroy">
-            <%= link_to "削除", card_path(card.id), method: :delete, id: "destroy-pass" %>
-          </div>
-        </div>
       </div>
     </div>
   <% end %>
