@@ -9,7 +9,7 @@ class CardsController < ApplicationController
 
   def create
     Card.create(card_params)
-    redirect_to root_path
+    redirect_to controller: :users, action: :show, id: current_user.id
   end
 
   def show
@@ -26,13 +26,13 @@ class CardsController < ApplicationController
   def update
     card = Card.find(params[:id])
     card.update(card_params)
-    redirect_to root_path
+    redirect_to controller: :users, action: :show, id: current_user.id
   end
 
   def destroy
     card = Card.find(params[:id])
     card.destroy
-    redirect_to root_path
+    redirect_to controller: :users, action: :show, id: current_user.id
   end
 
   private
