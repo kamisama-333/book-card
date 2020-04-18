@@ -40,22 +40,35 @@ body{
       &__table {
         font-size: 20px;
         font-weight: bold;
+        width: 55px;
       }
 
       &__text {
         display: flex;
-        padding-left: 30px;
 
         &__titols {
           font-size: 20px;
           font-weight: bold;
+          display: flex;
+
+          &__taitoru {
+            width: 450px;
+          }
         }
 
         &__write {
-          padding-left: 390px;
           font-size: 20px;
           font-weight: bold;
+
+          &__tyosya {
+            width: 400px;
+          }
         }
+      }
+
+      &__names {
+        font-size: 20px;
+        font-weight: bold;
       }
     }
     .content{
