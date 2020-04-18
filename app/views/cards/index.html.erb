@@ -5,10 +5,17 @@
     </div>
     <div class="heading__text">
       <div class= "heading__text__titols">
-        タイトル
-      </div>
+        <div class= "heading__text__titols__taitoru">
+          タイトル
+        </div>
       <div class="heading__text__write">
-        著者
+        <div class="heading__text__write__tyosya">
+          著者
+        </div>
+        </div>
+      </div>
+      <div class="heading__names">
+        読んだ人
       </div>
     </div>
   </div>
@@ -30,6 +37,9 @@
               <%= card.author %>
             </div>
           </div>
+        </div>
+        <div class= "content__right__nicknames">
+          <%= card.user.nickname %>
         </div>
       </div>
     </div>
