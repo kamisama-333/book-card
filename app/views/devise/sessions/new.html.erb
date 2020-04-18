@@ -6,12 +6,12 @@
       </div>
       <div class="fields">
         <%= f.label :メールアドレス %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email", id: :FieldCon %>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: :fields__content %>
       </div>
 
       <div class="fields">
         <%= f.label :パスワード %><br />
-        <%= f.password_field :password, autocomplete: "current-password", id: :FieldCon %>
+        <%= f.password_field :password, autocomplete: "current-password", class: :fields__content %>
       </div>
 
       
