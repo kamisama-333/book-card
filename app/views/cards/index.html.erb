@@ -1,17 +1,19 @@
 <div class="contents">
   <div class="heading">
     <div class="heading__table">
-      ID
+      <div class= "heading__table__ids">
+        ID
+      </div>
     </div>
     <div class="heading__text">
       <div class= "heading__text__titols">
         <div class= "heading__text__titols__taitoru">
           タイトル
         </div>
+      </div>
       <div class="heading__text__write">
         <div class="heading__text__write__tyosya">
           著者
-        </div>
         </div>
       </div>
       <div class="heading__names">
@@ -33,9 +35,7 @@
             <%= link_to card.title, card_path(card.id), id: "content__right__top__titles" %>
           </div>
           <div class="content__right__box__bottom">
-            <div class="content__right__box__bottom--author">
-              <%= card.author %>
-            </div>
+            <%= card.author %>
           </div>
         </div>
         <div class= "content__right__nicknames">
