@@ -1,5 +1,5 @@
 .Sess {
-  margin: auto;
+  margin: 30px auto 0;
   background-color: gainsboro;
   width: 700px;
   text-align: center;
@@ -15,7 +15,7 @@
     .fields {
       padding: 20px;
 
-      #FieldCon {
+      &__content {
         width: 300px;
       }
     }

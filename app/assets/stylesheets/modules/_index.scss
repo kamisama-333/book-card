@@ -38,9 +38,12 @@ body{
       display: flex;
 
       &__table {
-        font-size: 20px;
-        font-weight: bold;
-        width: 55px;
+
+        &__ids {
+          font-size: 20px;
+          font-weight: bold;
+          width: 55px;
+        }
       }
 
       &__text {
@@ -69,6 +72,7 @@ body{
       &__names {
         font-size: 20px;
         font-weight: bold;
+        width: 100px;
       }
     }
     .content{
@@ -103,10 +107,6 @@ body{
           &__bottom{
             font-size: 15px;
             width: 400px;
-            
-            &--author{
-              margin-left: 20px;
-            }
           }
         }
 
@@ -114,7 +114,12 @@ body{
           width: 230px;
           font-size: 12px;
           margin-top: 5px;
-          color: #666666;
+          
+
+          &__links {
+            text-decoration: none;
+            color: #666666;
+          }
         }
 
         &__edit {

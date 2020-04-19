@@ -5,14 +5,20 @@
     </div>
     <div class="heading">
       <div class="heading__table">
-        ID
+        <div class= "heading__table__ids">
+          ID
+        </div>
       </div>
       <div class="heading__text">
         <div class= "heading__text__titols">
-          タイトル
+          <div class= "heading__text__titols__taitoru">
+            タイトル
+          </div>
         </div>
         <div class="heading__text__write">
-          著者
+          <div class="heading__text__write__tyosya">
+            著者
+          </div>
         </div>
       </div>
     </div>
@@ -36,12 +42,14 @@
             </div>
           </div>
           <div class= "content__right__edit">
-            <div class= "content__right__edit__new">
-              <%= link_to "編集", edit_card_path(card.id), id: "edit-pass"%>
-            </div>
-            <div class= "content__right__edit__destroy">
-              <%= link_to "削除", card_path(card.id), method: :delete, id: "destroy-pass" %>
-            </div>
+            <% if user_signed_in? && current_user.id == card.user_id %>
+              <div class= "content__right__edit__new">
+                <%= link_to "編集", edit_card_path(card.id), id: "edit-pass"%>
+              </div>
+              <div class= "content__right__edit__destroy">
+                <%= link_to "削除", card_path(card.id), method: :delete, id: "destroy-pass" %>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>
