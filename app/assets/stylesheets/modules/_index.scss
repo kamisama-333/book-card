@@ -114,7 +114,12 @@ body{
           width: 230px;
           font-size: 12px;
           margin-top: 5px;
-          color: #666666;
+          
+
+          &__links {
+            text-decoration: none;
+            color: #666666;
+          }
         }
 
         &__edit {

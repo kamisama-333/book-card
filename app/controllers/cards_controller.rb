@@ -1,6 +1,7 @@
 class CardsController < ApplicationController
   def index
     @cards = Card.includes(:user)
+    @cards = Card.all.order(created_at: :desc)
   end
 
   def new
