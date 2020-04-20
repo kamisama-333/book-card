@@ -1,8 +1,14 @@
 <div class="contents">
   <div class="New">
-    <div class="NewCardTitle">
-      <%= @user.nickname %>さんが読んだ本
-    </div>
+    <% if user_signed_in? && current_user.id == @user.id%>
+      <div class="NewCardTitle">
+        あなたが読んだ本
+      </div>
+    <% else %>
+      <div class="NewCardTitle">
+        <%= @user.nickname %>さんが読んだ本
+      </div>
+    <% end %>
     <div class="heading">
       <div class="heading__table">
         <div class= "heading__table__ids">

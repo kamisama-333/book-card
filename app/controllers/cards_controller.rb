@@ -1,7 +1,7 @@
 class CardsController < ApplicationController
   def index
     @cards = Card.includes(:user)
-    @cards = Card.all.order(created_at: :desc)
+    @cards = Card.all.order(created_at: :desc)  #-- 時系列順に並べる
   end
 
   def new
