@@ -1,7 +1,6 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.includes(:user)
-    @cards = Card.all.order(created_at: :desc)  #-- 時系列順に並べる
+    @cards = Card.includes(:user).order(created_at: :desc).page(params[:page]).per(10)  #-- 時系列順に並べる,ページネーション 
   end
 
   def new
