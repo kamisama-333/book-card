@@ -16,7 +16,8 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
   end
 
-  def add
+  def search
+    @cards = Card.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(10)
   end
 
   def edit

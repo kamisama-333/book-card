@@ -30,6 +30,16 @@ body{
       }
     }
   }
+  
+  .search-form {
+    margin: 30px auto 0;
+    width: 20%;
+
+    &__btn {
+      color: white;
+      background: #0099e8;
+    }
+  }
   .contents{
     margin: 30px auto 0;
     background-color: #fff;
