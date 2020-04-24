@@ -18,6 +18,10 @@ class CardsController < ApplicationController
 
   def search
     @cards = Card.search(params[:keyword]).order(created_at: :desc).page(params[:page]).per(10)
+    respond_to do |format|
+      format.html #フォーマットを指定
+      format.json
+    end
   end
 
   def edit
