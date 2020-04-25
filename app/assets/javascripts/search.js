@@ -5,7 +5,7 @@ $(function() {
       type: 'GET',  // HTTPメソッド
       url: '/cards/search',
       data: { keyword: input },
-      dataType: 'json'
+      dataType: 'json' // サーバから値を返すのはjson
     })
     .done(function(cards) {
       $(".contents").empty();  //投稿の子要素を削除
