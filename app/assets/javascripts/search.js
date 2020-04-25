@@ -2,7 +2,7 @@ $(function() {
   $(".search-input").on("keyup", function() {
     let input = $(".search-input").val();
     $.ajax({
-      type: 'GET',
+      type: 'GET',  // HTTPメソッド
       url: '/cards/search',
       data: { keyword: input },
       dataType: 'json'
