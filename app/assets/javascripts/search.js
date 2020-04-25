@@ -1,6 +1,11 @@
 $(function() {
   $(".search-input").on("keyup", function() {
     let input = $(".search-input").val();
-    console.log(input);
+    $.ajax({
+      type: 'GET',
+      url: '/cards/search',
+      data: { keyword: input },
+      dataType: 'json'
+    })
   });
 });
