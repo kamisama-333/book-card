@@ -27,27 +27,29 @@
     </div>
   </div>
 
-  <% @cards.each do |card| %>
-    <div class="content">
-      <div class="content__left">
-        <div class="content__left--id">
-          <%= card.user_id %>
-        </div>
-      </div>
-      <div class="content__right">
-        <div class= "content__right__box">
-          <div class="content__right__box__top">
-            <%= link_to card.title, card_path(card.id), id: "content__right__top__titles" %>
-          </div>
-          <div class="content__right__box__bottom">
-            <%= card.author %>
+  <div class="wrapper">
+    <% @cards.each do |card| %>
+      <div class="content">
+        <div class="content__left">
+          <div class="content__left--id">
+            <%= card.user_id %>
           </div>
         </div>
-        <div class= "content__right__nicknames">
-          <%= link_to card.user.nickname, user_path(card.user_id), class: "content__right__nicknames__links"%>
+        <div class="content__right">
+          <div class= "content__right__box">
+            <div class="content__right__box__top">
+              <%= link_to card.title, card_path(card.id), id: "content__right__top__titles" %>
+            </div>
+            <div class="content__right__box__bottom">
+              <%= card.author %>
+            </div>
+          </div>
+          <div class= "content__right__nicknames">
+            <%= link_to card.user.nickname, user_path(card.user_id), class: "content__right__nicknames__links"%>
+          </div>
         </div>
       </div>
-    </div>
-  <% end %>
-  <%= paginate(@cards) %>
+    <% end %>
+    <%= paginate(@cards) %>
+  </div>
 </div>
