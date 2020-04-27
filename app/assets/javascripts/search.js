@@ -54,5 +54,8 @@ $(function() {
         appendErrMsgToHTML("一致する本はありません");
       }
     })
+    .fail(function() {
+      alert('error');
+    });
   });
 });
