@@ -30,6 +30,11 @@ $(function() {
                 </div>`
     search_list.append(html);
   }
+
+  function appendErrMsgToHTML(msg) {
+    var html = `<div class='name'>${ msg }</div>`
+    search_list.append(html);
+  }
   $(".search-input").on("keyup", function() {
     let input = $(".search-input").val();
     $.ajax({
