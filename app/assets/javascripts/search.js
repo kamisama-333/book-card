@@ -32,7 +32,7 @@ $(function() {
   }
 
   function appendErrMsgToHTML(msg) {
-    var html = `<div class='name'>${ msg }</div>`
+    var html = `<div class='contents__err'>${ msg }</div>`
     search_list.append(html);
   }
   $(".search-input").on("keyup", function() {
@@ -47,11 +47,13 @@ $(function() {
       search_list.empty();  //投稿の子要素を削除
       if (cards.length !== 0) {
         cards.forEach(function(card){
+          $('.heading').show();  //非表示にしたのを表示する
           appendCard(card);
         });
       }
       else {
-        appendErrMsgToHTML("一致する本はありません");
+        $('.heading').hide();  //親要素を非表示
+          appendErrMsgToHTML("一致する本はありません");
       }
     })
     .fail(function() {
