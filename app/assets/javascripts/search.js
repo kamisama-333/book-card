@@ -32,7 +32,7 @@ $(function() {
   }
 
   function appendErrMsgToHTML(msg) {
-    var html = `<div class='contents__err'>${ msg }</div>`
+    let html = `<div class='contents__err'>${ msg }</div>`
     search_list.append(html);
   }
   $(".search-input").on("keyup", function() {
