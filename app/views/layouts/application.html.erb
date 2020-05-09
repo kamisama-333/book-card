@@ -30,17 +30,18 @@
       </div>
     </header>
 
+    <%# Drawer Menu %>
     <div class="hamberger_menu">
       <% if user_signed_in? %>
         <% if request.path.include?("users") && current_user.id == @user.id%>
-          <!-- 三本線 -->
+          <%# 三本線 %>
           <div class="hamberger_line">
             <span></span>
             <span></span>
             <span></span>
           </div>
 
-          <!-- クリックしたときのメニュー -->
+           <%# クリックしたときのメニュ- %>
           <nav class="hamberger_list">
             <ul>
               <li><a href="#">ドロワー1</a></li>
