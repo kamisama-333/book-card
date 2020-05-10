@@ -41,8 +41,10 @@ body{
     }
 
     .search-form {
-      margin: 30px auto 0;
-      width: 250px;
+      width: 1152px;
+      background-color: #f6f6f6;
+      text-align: center;
+      padding-bottom: 30px;
       &__btn {
         color: white;
         background: #0099e8;
