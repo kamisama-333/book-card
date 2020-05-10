@@ -41,3 +41,28 @@
   }
 }
 
+.hamberger_list {
+  width: 200px;
+  height: 100%;
+  padding-top: 100px;
+  background-color: navy;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateX(-250px);
+  transition: all .5s;
+  
+  li {
+    text-align: center;
+    padding: 10px 0;
+    list-style: none;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .hamberger_list.open {
+    transform: translateX(0);
+  }
+}
