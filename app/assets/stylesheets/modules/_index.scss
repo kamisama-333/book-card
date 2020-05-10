@@ -29,10 +29,6 @@ body{
     }
   }
 
-
-  
-
-
   .contents{
     margin: 100px auto 0;
     background-color: #fff;
@@ -56,6 +52,7 @@ body{
       padding: 10px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
+      width: 1152px;
       &__table {
         &__ids {
           font-size: 20px;
@@ -88,11 +85,11 @@ body{
       }
     }
 
-
     .content{
       padding: 10px 0 10px 10px;
       border-bottom: 1px solid #f6f6f6;
       display: flex;
+      width: 1152px;
       &__left{
         &--id{
           width: 55px;
