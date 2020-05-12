@@ -1,9 +1,8 @@
-<%= form_with(url: search_cards_path, skip_enforcing_utf8: true, local: true, method: :get, class: "search-form") do |form| %>
-  <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
-  <%= form.submit "検索", class: "search-form__btn", name: nil%>
-<% end %>
-
 <div class="contents">
+  <%= form_with(url: search_cards_path, skip_enforcing_utf8: true, local: true, method: :get, class: "search-form") do |form| %>
+    <%= form.text_field :keyword, placeholder: "投稿を検索する", class: "search-input" %>
+    <%= form.submit "検索", class: "search-form__btn", name: nil%>
+  <% end %>
   <div class="heading">
     <div class="heading__table">
       <div class= "heading__table__ids">

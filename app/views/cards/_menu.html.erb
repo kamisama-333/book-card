@@ -1,0 +1,21 @@
+<div class="hamberger_menu">
+  <% if user_signed_in? %>
+    <% if request.path.include?("users") && current_user.id == @user.id%>
+      <%# 三本線 %>
+      <div class="hamberger_line" >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+        <%# クリックしたときのメニュ- %>
+      <nav class="hamberger_list">
+        <ul>
+          <li><a href="#">ドロワー1</a></li>
+          <li><a href="#">ドロワー2</a></li>
+          <li><a href="#">ドロワー3</a></li>
+        </ul>
+      </nav>
+    <% end %>
+  <% end %>
+</div>

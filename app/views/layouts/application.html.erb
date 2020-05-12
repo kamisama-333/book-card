@@ -4,7 +4,6 @@
     <title>BookCard</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -28,7 +27,9 @@
           <%= link_to "新規登録", new_user_registration_path, class: "header__right--btn" %>
         <% end %>
       </div>
+     
     </header>
+     <%= render "cards/menu" %>
     <%= yield %>
   </body>
 </html>
