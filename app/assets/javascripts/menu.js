@@ -18,7 +18,6 @@ $(function () {
         $(this).removeClass('open');
         $('.hamberger_line').removeClass('open');
         $('.hamberger_list').removeClass('open');
-      
     }
   });
 });
