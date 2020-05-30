@@ -14,8 +14,11 @@
           <li><%= link_to "登録情報変更", "#"  %></li>
         </ul>
       </nav>
+
       <div class="log">
         <%= @cards.first.updated_at.strftime('%Y/%m/%d %H:%M:%S') %>
+      </div>
+      
       <div class="overlay"></div>
     <% end %>
   <% end %>
