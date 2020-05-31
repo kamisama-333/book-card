@@ -67,12 +67,11 @@
   &.open {
     transform: translateX(0);
   }
-}
 
-
-.log {
-  position: absolute;
-  bottom: 30px;
+  .log {
+    position: absolute;
+    bottom: 30px;
+  }
 }
 
 .overlay {
