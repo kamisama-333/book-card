@@ -1,6 +1,6 @@
 <div class="hamberger_menu">
   <% if user_signed_in? %>
-    <% if request.path.include?("users") && current_user.id == @user.id%>
+    <% if request.path.include?("users") && current_user.id == @user.id %>
       <%# 三本線 %>
       <div class="hamberger_line" >
         <span></span>
