@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: book-card_production
-  username: book-card
-  password: <%= ENV['BOOK-CARD_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
